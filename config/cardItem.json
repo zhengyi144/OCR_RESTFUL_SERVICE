@@ -1,0 +1,57 @@
+{
+    "ID0":{
+            "features":["validity"]
+          },
+    "ID1":{
+            "features":["name","gender","nation","birth","address","idNumber"]
+        },
+     "FZU":{
+             "features":["name","studentNumber","academy"]
+        },
+      "FJNU":{
+             "features":["cardNumber","name","gender","academy","major"]
+      },
+      "FJNUXHC":{
+              "features":["cardNumber","name","gender","major"]
+      },
+      "MJU":{
+              "features":["name","academy","major","studentNumber"]
+      },
+      "FTU":{
+              "features":["name","accountNumber","studentNumber"]
+      },
+      "FAAFU":{
+              "features":["name","studentNumber","academy"]
+      },
+      "FMU":{
+              "features":["name","studentNumber","academy"]
+      },
+      "FTCMU":{
+              "features":["name","studentNumber","academy"]
+      },
+      "MJTC":{
+             "features":["name","studentNumber"] 
+      },
+      "FJXC":{
+             "features":["name","gender","studentNumber"]
+      },
+      "FTP":{
+              "features":["name","studentNumber","major"]
+      },
+      "ITEMS":{
+        "validity":["有效期限","期限","限","有效期"],
+        "name":["姓名","名"],
+        "gender":["性别","别"],
+        "nation":["民族","族"],
+        "birth" :["出生","生"],
+        "address":["住址","址"],
+        "idNumber":["号码","码"],
+        "studentNumber":["学号","号"],
+        "academy":["学院","院"],
+        "cardNumber":["卡号","号"],
+        "major":["专业","业"],
+        "accountNumber":["账号","号"]
+      }
+      
+    
+}

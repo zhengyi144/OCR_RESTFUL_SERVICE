@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no, width=device-width">
+    <title>OCRDemon</title>
+    <style>
+   </style>
+</head>
+
+<body>
+    <div>
+        <label><input type="radio" value="ocr" name="imageType" checked="checked">ocr</label>
+        <label><input type="radio" value="face" name="imageType">比对人像</label>
+        <input type="file" onchange="selectImage(this);">
+        <button  style="margin-left: 10px;" onclick="uploadImage()">上传图片</button>
+        <button  style="margin-left: 10px;" onclick="ocrDetectRecognise()">ocr检测识别</button>
+        <button  style="margin-left: 10px;" onclick="faceDetect()">人脸检测</button>  
+        <button  style="margin-left: 10px;" onclick="faceRecognise()">人脸比对</button>  
+    </div>
+
+    <img id="srcImage" src="" style="width: 500px;">
+    <img id="dstImage" src="" style="margin-left: 20px;width:500px;">
+    <input type="text" id="cmpResult">
+
+    <div style="margin-top: 50px;">
+        <label><input type="radio" value="idCardImage" name="imageType2" checked="checked">身份证</label>
+        <label><input type="radio" value="faceImage" name="imageType2">人像</label>
+        <label><input type="radio" value="studentCardImage" name="imageType2">学生证</label>
+        <label><input type="text" id="userId">用户id</label>
+        <label><input type="text" id="schoolName">所属学校</label>
+        <label><input type="radio" value="label0" name="imageLabel" checked="checked">正面</label>
+        <label><input type="radio" value="label1" name="imageLabel">反面</label>
+        <input type="file" onchange="selectImage2(this);">
+        <button  style="margin-left: 10px;" onclick="uploadImage2()">上传图片</button>
+    </div>
+</body>
+
+<script type="text/javascript" src="{{ url_for('static',filename='js/jquery.js') }}"></script>
+<script src="https://cdn.jsdelivr.net/npm/exif-js"></script>
+<script type="text/javascript" src="{{ url_for('static',filename='js/OCRDemon.js') }}"></script>

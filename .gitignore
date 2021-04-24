@@ -1,0 +1,9 @@
+*.log
+*.log.*
+*.pyc
+*.xml
+*.cpython-37.pyc
+*.env
+*.lock
+*.vscode
+
